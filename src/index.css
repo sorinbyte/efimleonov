@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/* Set full height */
+html,
+body,
+#root {
+  height: 100%;
+  overflow: hidden; /* Prevent body scrolling if you're managing scroll elsewhere */
+}
+
+/* Tailwind dark mode colors */
+body {
+  @apply bg-white text-black dark:bg-black dark:text-white;
+}
+
+/* Custom scrollbar for modern browsers */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(45, 96%, 79%); /* Soft yellow */
+  border-radius: 3px;
+}
+
+#root {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+body {
+  cursor: url('/cursor1.cur'), auto;
+}
+
+a, a:hover {
+  cursor: url('/cursor2.cur'), pointer;
+}
+
